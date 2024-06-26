@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100%;
+    /* background: #2d3436; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top img {
+    width: 20%;
+}
+h1{
+    font-size: 4em;
+    font-family: "Playwrite NZ", cursive;
+
+}
+.mainsticky{
+    position: relative;
+    width: 40%;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(253, 121, 168,0.1);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.topnav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5px;
+    font-size: 1.8em;
+    background-color: rgba(253, 121, 168,0.5);
+}
+
+.topnav a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+.topnav .right a{
+    padding: 0px 10px;
+}
+.centerbox{
+    width: 100%;
+}
+
+.centerbox textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 12px;
+    font-size: 18px;
+    resize: none;
+}
+textarea::placeholder{
+    color: black;
+}
+.bottomnav{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: rgba(253, 121, 168,0.2);
+}
+
+.bottomnav a{
+    padding: 10px 12px;
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+
+}
+.bottomnav #bold{
+    font-weight: bolder;
+}
+.bottomnav #italic{
+    font-style: italic;
+}.bottomnav #underline {
+    text-decoration: underline;
+}
+.bottomnav #cut{
+    text-decoration: line-through;
+}
+/* color option */
+.coloroption{
+    position: absolute;
+    top: -20%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+}
+.coloroption .colors{
+    width: 14.28%;
+    height: 60px;
+    cursor: pointer;
+}
+#addsticky{
+    padding: 5px 30px;
+    font-size: 22px;
+    border: none;
+    background: #6c5ce7;
+    color: white;
+    display: none;
+    cursor: pointer;
+}

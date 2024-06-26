@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Note Project By Yash Bhola</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top"> <img src="stickyshadow.jpg" alt="sticky logo">
+        <h1>Sticky Notes</h1>
+    </div>
+    <div class="mainsticky" id="sticky">
+        <div class="topnav" id="topnav">
+            <div class="left"><a href="#" id="addnote"> <ion-icon name="add-outline"></ion-icon></a></div>
+            <div class="right"><a href="#" id="coloroptions" title="Change Sticky Color"><ion-icon name="menu-outline"></ion-icon></a><a href="#"
+                    id="closenote"><ion-icon name="close-outline"></ion-icon></a></div>
+        </div>
+        <div class="centerbox">
+            <textarea name="note" id="note" placeholder="Take a note..." rows="15"></textarea>
+        </div>
+        <div class="bottomnav" id="bottomnav">
+            <a href="#" id="bold">B</a>
+            <a href="#" id="italic">I</a>
+            <a href="#" id="underline">U</a>
+            <a href="#" id="cut">ab</a>
+            <a href="#" id="bullet"><ion-icon name="list-outline"></ion-icon></a>
+            <a href="#" id="image"><ion-icon name="image-outline"></ion-icon></a>
+        </div>
+
+        <!-- Color Option -->
+        <div class="coloroption" id="coloroption">
+            <div class="colors" id="yellow" style="background:#f9ca24 ;"></div>
+            <div class="colors" id="green" style="background: #00b894;"></div>
+            <div class="colors" id="pink" style="background:#be2edd ;"></div>
+            <div class="colors" id="purple" style="background: #4834d4;"></div>
+            <div class="colors" id="blue" style="background: #1e85ca;"></div>
+            <div class="colors" id="gray" style="background: #535c68;"></div>
+            <div class="colors" id="charcoal" style="background:#2d3436 ;"></div>
+        </div>
+    </div>
+    <button id="addsticky">
+        <ion-icon name="add-outline"></ion-icon>
+    </button>
+
+
+
+    <script src="sticky.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
